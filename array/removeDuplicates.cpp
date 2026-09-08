@@ -33,4 +33,5 @@ int main(){
     
     return 0;
 }
-// in  this appraoach to remove duplicates we have used a pointer which moves only when there is an unique element appears in the array 
+// in  this appraoach to remove duplicates 
+//used a pointer  moves  when there is an unique element appears in the array 
