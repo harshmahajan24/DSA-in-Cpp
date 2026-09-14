@@ -4,22 +4,61 @@ using namespace std;
 class Solution
 {
 public:
+    // void threeSum(int arr[], int target, int n)
+    // {
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         for (int j = i + 1; j < n; j++)
+    //         {
+    //             for (int k = j + 1; k < n; k++)
+    //             {
+    //                 if (arr[i] + arr[j] + arr[k] == target)
+    //                 {
+    //                     cout << "["
+    //                          << arr[i] << ", "
+    //                          << arr[j] << ", "
+    //                          << arr[k] << "]" << endl;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
     void threeSum(int arr[], int target, int n)
     {
+        int i = 0;
+        int j = i + 1;
+        int k = j + 1;
+
+
+        for (int k = j + 1; k < n; k++)
+        {
+            if (arr[i] + arr[j] + arr[k] == target)
+            {
+                cout << "["
+                     << arr[i] << ", "
+                     << arr[j] << ", "
+                     << arr[k] << "]" << endl;
+            }
+        }
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] + arr[j] + arr[k] == target)
+            {
+                cout << "["
+                     << arr[i] << ", "
+                     << arr[j] << ", "
+                     << arr[k] << "]" << endl;
+            }
+        }
         for (int i = 0; i < n; i++)
         {
-            for (int j = i + 1; j < n; j++)
+            if (arr[i] + arr[j] + arr[k] == target)
             {
-                for (int k = j + 1; k < n; k++)
-                {
-                    if (arr[i] + arr[j] + arr[k] == target)
-                    {
-                        cout << "["
-                             << arr[i] << ", "
-                             << arr[j] << ", "
-                             << arr[k] << "]" << endl;
-                    }
-                }
+                cout << "["
+                     << arr[i] << ", "
+                     << arr[j] << ", "
+                     << arr[k] << "]" << endl;
             }
         }
     }
