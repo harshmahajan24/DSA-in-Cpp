@@ -19,6 +19,29 @@ public:
         }
         return -1;
     }
+
+    int optimalSOlution(vector<int> &nums)
+    {
+        int balance = 0;
+        int candidate = 0;
+        for (int value : nums)
+        {
+            if (balance == 0)
+            {
+                candidate = value;
+            }
+
+            if (value == candidate)
+            {
+                balance++;
+            }
+            else
+            {
+                balance--;
+            }
+        }
+        return candidate;
+    }
 };
 
 int main()
@@ -29,5 +52,7 @@ int main()
     Solution sol;
 
     cout << sol.findMajorElement(nums) << '\n';
+    cout << sol.optimalSOlution(nums) << '\n';
+
     return 0;
 }
