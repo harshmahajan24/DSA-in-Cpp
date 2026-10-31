@@ -1,3 +1,11 @@
+/*I use Boyer–Moore voting to find the majority element in one pass. 
+I maintain a candidate and a balance: matching values increase the balance, 
+and nonmatching values decrease it. When the balance becomes zero,
+I choose the current value as the new candidate.
+This effectively removes pairs of different values; 
+since the guaranteed majority appears more than all other values combined,
+it cannot be fully canceled and is the final candidate.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
