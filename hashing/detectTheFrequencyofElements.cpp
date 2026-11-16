@@ -13,13 +13,6 @@ int hashFunction(int arr[], int queryNumber , int n){
     return hash[queryNumber];
 }
 
-// size of array
-// int findSizeofArray(int arr[]){
-//     int length = sizeof(arr)/sizeof(arr[0]);
-//     return length;
-// }
-
-
 int main() {
 
     int n;
@@ -31,12 +24,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
-    //precompute:
-    // int hash[13] = {0};
-    // for (int i = 0; i < n; i++) {
-    //     hash[arr[i]] += 1;
-    // }
 
     int q;
     cout<<"enter number of queries :"<<endl;
