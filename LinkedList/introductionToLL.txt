@@ -1,0 +1,58 @@
+Linked List: 
+A linear data structure where elements are stored inside individual nodes. Each node contains two parts:
+    1. Data – Stores the actual value.
+    2. Next Pointer – Stores the address of the next node.
+
+It has a chain-like structure.
+Example: 10 → 20 → 30 → 40 → NULL
+
+Here, 10 is the head node and NULL indicates the end of the linked list.
+
+
+this is the architecture of node :
+struct Node {
+    int data;
+    Node* next;
+};
+
+
+
+Node* head = new Node();
+This is how to create a node.
+
+
+Now we can access its members using the arrow operator (->).
+Let's take a view of how:
+first->data = 10;
+first->next = NULL;
+
+
+Let's construct two Nodes and connect them.
+struct Node {
+    int data;
+    Node* next;
+};
+
+int main() {
+
+    Node* first = new Node();
+    Node* second = new Node();
+
+    first->data = 10;
+    first->next = second;
+
+    second->data = 20;
+    second->next = NULL;
+
+}
+
+
+
+How do we traverse a Linked List?
+Node* temp = first;
+while (temp != NULL) {
+
+    cout << temp->data << " ";
+
+    temp = temp->next;
+}
