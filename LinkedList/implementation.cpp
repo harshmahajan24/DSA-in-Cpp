@@ -25,14 +25,15 @@ int main()
     third->next = fourth;
 
     fourth->data = 40;
-    fourth->next = NULL;
+    fourth->next = NULL;//for singly linked list
+    // fourth->next = first; //for cicular linked list
 
     Node *temp = first;
 
     while (temp != NULL)
     {
         cout << temp->data<<" ";
-        // if(temp->next==first) break;
+        // if(temp->next==first) break; for traversal in circular LL
 
         temp = temp->next;
 
