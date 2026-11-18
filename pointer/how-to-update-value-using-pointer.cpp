@@ -15,7 +15,7 @@ int main()
 
     int *ptr = &a;
     *ptr = 20;
-    cout << "value of A after update:" << a << endl;
+    cout << "value of A before update:" << a << endl;
 
     cout << "value after updated by function:" << update(&a) << endl;
 }
