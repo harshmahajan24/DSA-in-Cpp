@@ -25,7 +25,7 @@ int main()
     Node* newNode = new Node{5,nullptr};// created new node
     newNode->next= head;
 
-
+    Node* temp = newNode;
     while (temp != NULL)
     {
         cout << temp->data<<" ";
