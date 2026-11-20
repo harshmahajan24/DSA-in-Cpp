@@ -22,16 +22,14 @@ int main()
 
     // Deleting a node at end:
     Node *i = head;
-    while (i != NULL)
+    while (i->next->next != nullptr)
     {
-        if (i->next->next == nullptr)
-        {
-            i->next = nullptr;
-            delete i->next;
-            break;
-        }
         i = i->next;
     }
+
+    Node *last = i->next;
+    i->next = nullptr;
+    delete last;
 
     Node *temp = head;
     while (temp != NULL)
