@@ -9,6 +9,7 @@ struct Node
 
 int main()
 {
+    int specificIndex = 0;
 
     Node *first = new Node{10, nullptr};
     Node *second = new Node{20, nullptr};
@@ -24,24 +25,36 @@ int main()
     // Inserting a node at specific postion:
     Node *newNode = new Node{25, nullptr}; // created new node
 
-    Node* temp = first;
-    while (temp != nullptr)
+    Node *temp = first;
+    int i = 0;
+    if (specificIndex == 0)
     {
-        if (temp->data==20)
+        newNode->next = head;
+        head = newNode;
+    }
+    else
+    {
+        Node *temp = head;
+        int i = 0;
+
+        while (temp != nullptr && i < specificIndex - 1)
         {
-            newNode->next=temp->next;
-            temp->next = newNode;
-            
+            temp = temp->next;
+            i++;
         }
-        temp = temp->next;
+
+        if (temp != nullptr)
+        {
+            newNode->next = temp->next;
+            temp->next = newNode;
+        }
     }
 
-    Node *temp1 = first;
+    Node *temp1 = head;
     while (temp1 != NULL)
     {
-        cout << temp1->data<<" ";
+        cout << temp1->data << " ";
         temp1 = temp1->next;
-
     }
     return 0;
 }
