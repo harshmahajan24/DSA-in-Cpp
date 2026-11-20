@@ -9,7 +9,6 @@ struct Node
 
 int main()
 {
-
     Node *first = new Node{10, nullptr};
     Node *second = new Node{20, nullptr};
     Node *third = new Node{30, nullptr};
@@ -22,7 +21,7 @@ int main()
     Node* head = first;
 
     //Deleting a node at beginnig:
-    head= first->next;
+    head= head->next;
     delete first;
 
     Node* temp = head;
