@@ -4,7 +4,7 @@ using namespace std;
 struct Node
 {
     int data;
-    Node* next;
+    Node *next;
 };
 
 int main()
@@ -18,18 +18,21 @@ int main()
     second->next = third;
     third->next = fourth;
 
-    Node* head = first;
+    Node *head = first;
 
-    //Deleting a node at beginnig:
-    head= head->next;
-    delete first;
+    // Deleting a node at beginnig:
+    if (head != nullptr)
+    {
+        Node *td = head;
+        head = head->next;
+        delete td;
+    }
 
-    Node* temp = head;
+    Node *temp = head;
     while (temp != NULL)
     {
-        cout << temp->data<<" ";
+        cout << temp->data << " ";
         temp = temp->next;
-
     }
     return 0;
 }

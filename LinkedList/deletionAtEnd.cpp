@@ -27,8 +27,8 @@ int main()
         i = i->next;
     }
 
-    Node *last = i->next;
-    i->next = nullptr;
+    Node* last = i->next;
+    i->next=nullptr;
     delete last;
 
     Node *temp = head;
