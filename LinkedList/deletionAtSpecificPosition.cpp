@@ -11,7 +11,6 @@ int main()
 {
     int specificIndex = 2;
     bool foundIndex = false;
-    bool *p = &foundIndex;
     Node *first = new Node{10, nullptr};
     Node *second = new Node{20, nullptr};
     Node *third = new Node{30, nullptr};
