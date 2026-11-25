@@ -21,7 +21,8 @@ This repository tracks my journey through the world of DSA. It includes fundamen
 | Status | Topic | Key Concepts |
 | :--- | :--- | :--- |
 | ✅ | **Arrays** | Two Pointers, Sliding Window, Kadane's |
-| 🏗️ | **Searching & Sorting** | Binary Search, Merge Sort, Quick Sort |
+| ✅ | **String** | Traversal, Manipulation |
+| ✅ | **Searching & Sorting** | Binary Search, Merge Sort, Quick Sort |
 | ✅ | **Recursion & Backtracking** | Subset Sum, N-Queens, String Permutations |
 | ⏳ | **Linked List** | Floyd’s Cycle, Reversal, Doubly Linked Lists |
 | ⏳ | **Stack & Queue** | Next Greater Element, Circular Queues |
